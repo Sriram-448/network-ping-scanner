@@ -53,5 +53,5 @@ async def realtime_scan(cidr, interval=3):
 
 # Entry point
 if __name__ == "__main__":
-    CIDR_RANGE = "192.168.1.0/24"
+    CIDR_RANGE = "192.168.1.0/24" # change to your local subnet
     asyncio.run(realtime_scan(CIDR_RANGE))
