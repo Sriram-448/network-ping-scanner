@@ -23,4 +23,4 @@ def scan_network(network_cidr):
             print(f"[-] {ip} is down")
 
 # Replace with your actual network, e.g., "192.168.159.0/24"
-scan_network("192.168.159.0/24")
+scan_network("192.168.1.0/24")
