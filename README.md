@@ -1,28 +1,28 @@
-# 🛰️ Network Ping Scanner (ICMP Host Discovery)
+#  Network Ping Scanner (ICMP Host Discovery)
 
 A Python-based network utility that performs ICMP echo-based host discovery over a given IPv4 subnet. This project demonstrates foundational networking concepts and OS-level command execution.
 
-## 📌 Overview
+##  Overview
 
 The scanner accepts a CIDR-formatted network range (e.g., 192.168.1.0/24) and checks host availability by issuing ICMP Echo Requests using the system ping utility.
 
 This project focuses on clarity, correctness, and cross-platform compatibility, making it suitable for beginners learning networking fundamentals.
 
-## ⚙️ Features
+##  Features
 
 - CIDR-based subnet handling using ipaddress
 - ICMP Echo Request–based host detection
 - Cross-platform support (Windows / Linux)
 - Clear console output indicating host availability
 
-## 🧠 Concepts Demonstrated
+##  Concepts Demonstrated
 
 - IPv4 addressing and subnetting
 - ICMP protocol fundamentals
 - OS-level command execution from Python
 - Sequential network probing logic
 
-## 🚧 Current Limitations
+##  Current Limitations
 
 - Hosts are scanned sequentially, which impacts performance on larger subnets
 - Scan scope is intentionally limited (first 10 hosts)
@@ -32,7 +32,7 @@ This project focuses on clarity, correctness, and cross-platform compatibility, 
 
 These limitations are deliberate to keep the implementation beginner-friendly.
 
-## 🔮 Planned Improvements
+##  Planned Improvements
 
 - Asynchronous or concurrent scanning
 - Full subnet coverage
@@ -42,7 +42,7 @@ These limitations are deliberate to keep the implementation beginner-friendly.
 - Raw ICMP implementation (no shell calls)
 
 
-## 🌐 ICMP Explained
+##  ICMP Explained
 
 Internet Control Message Protocol (ICMP) operates at the network layer and is used for diagnostic and control messaging.
 
@@ -56,7 +56,7 @@ ping 192.168.1.1
 - The target responds with an Echo Reply
 - Receipt of the reply confirms host reachability
 
-## 🧪 What This Code Actually Does
+##  What This Code Actually Does
 
 - Launches hundreds of ICMP probes simultaneously
 - Updates host status every few seconds
@@ -77,29 +77,29 @@ This is real scanning behavior.
 
 
 
-<!-- # 🛰️ Basic Network Ping Scanner using Python
+<!-- #  Basic Network Ping Scanner using Python
 
 This is a beginner-friendly Python project that scans a range of IP addresses and checks which devices are "alive" using the `ping` command.
 
-## 🚀 What it does
+##  What it does
 
 - Accepts a network range like `192.168.1.0/24`
 - Pings the first 10 IP addresses
 - Prints whether each device is online or offline
 
-## 🧰 Tools Used
+##  Tools Used
 
 - Python `os` and `platform` modules
 - `ipaddress` for handling subnets
 - Works cross-platform (Windows/Linux)
 
-## 🧠 What You Learn
+##  What You Learn
 
 - Basic networking concepts (IP, ICMP, ping)
 - How devices are discovered on local networks
 - Simple scripting for network tasks
 
-## 🔧 How to Run
+##  How to Run
 
 1. Open terminal / command prompt
 2. Replace the subnet in the script with your real one (use `ipconfig` or `ifconfig`)
