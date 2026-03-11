@@ -11,7 +11,7 @@ This project focuses on clarity, correctness, and cross-platform compatibility, 
 ##  Features
 
 - CIDR-based subnet handling using ipaddress
-- ICMP Echo Request–based host detection
+- ICMP Echo Request-based host detection
 - Cross-platform support (Windows / Linux)
 - Clear console output indicating host availability
 
